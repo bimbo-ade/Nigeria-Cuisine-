@@ -254,7 +254,8 @@ header a {
 .cont-content {
   height: 50%;
   width: 40%;
-  background: white;
+  border-radius: 0px 50px;
+  background: rgba(253, 253, 253, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,7 +266,7 @@ header a {
   display: flex;
   align-items: center;
   padding: 10px;
-  background: rgb(235, 230, 230);
+  background: rgb(252, 249, 249);
   margin: 20px;
 }
 .social-con img {
@@ -321,63 +322,67 @@ footer p {
   .rev-cont {
     flex-direction: column;
   }
-}
-
-@media all and (max-width: 620px) {
-  .banner .content h2 {
-    font-size: 40px;
+  .cont-content {
+    width: 65%;
+    height: 70%;
   }
 
-  .banner .content p {
-    font-size: 17px;
-    color: white;
-    margin: 17px;
-  }
-  .nav {
-    display: none !important;
-  }
+  @media all and (max-width: 620px) {
+    .banner .content h2 {
+      font-size: 40px;
+    }
 
-  .icon {
-    display: block;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-    z-index: 300;
-  }
-  .navvs {
-    background-color: rgba(15, 15, 15, 0.6);
-    width: 50%;
-    height: 40%;
-    position: fixed !important;
-    top: 0;
-    right: 0;
-    display: flex !important;
-    margin-right: 0 !important;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    .banner .content p {
+      font-size: 17px;
+      color: white;
+      margin: 17px;
+    }
+    .nav {
+      display: none !important;
+    }
 
-  .rev-cont {
-    flex-direction: column;
-  }
+    .icon {
+      display: block;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      z-index: 300;
+    }
+    .navvs {
+      background-color: rgba(15, 15, 15, 0.6);
+      width: 50%;
+      height: 40%;
+      position: fixed !important;
+      top: 0;
+      right: 0;
+      display: flex !important;
+      margin-right: 0 !important;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
 
-  .rev1,
-  .rev2,
-  .rev3 {
-    width: 360px;
-    height: 140px;
-  }
+    .rev-cont {
+      flex-direction: column;
+    }
 
-  .navvs li {
-    margin: 6px;
-  }
-  header a {
-    font-size: 23px;
-    color: rgb(250, 243, 243);
-  }
-  .fixed a {
-    color: white;
+    .rev1,
+    .rev2,
+    .rev3 {
+      width: 360px;
+      height: 140px;
+    }
+
+    .navvs li {
+      margin: 6px;
+    }
+    header a {
+      font-size: 23px;
+      color: rgb(250, 243, 243);
+    }
+    .fixed a {
+      color: white;
+    }
   }
 }
