@@ -245,7 +245,7 @@ header a {
 }
 .contact h2 {
   font-size: 40px;
-  margin-top: 50px;
+  margin-top: 100px;
   text-align: center;
 }
 .contact h2 span {
@@ -366,12 +366,16 @@ footer p {
     .rev-cont {
       flex-direction: column;
     }
+    .rev-cont p {
+      margin: 5px 30px;
+    }
 
     .rev1,
     .rev2,
     .rev3 {
       width: 360px;
       height: 140px;
+      margin: 30px;
     }
 
     .navvs li {
@@ -383,6 +387,10 @@ footer p {
     }
     .fixed a {
       color: white;
+    }
+
+    .showH3 {
+      font-size: 13px;
     }
   }
 }
