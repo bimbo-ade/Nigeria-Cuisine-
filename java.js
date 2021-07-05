@@ -45,3 +45,20 @@ const textThree = document.querySelector(".text3");
 mail.addEventListener("click", function () {
   textThree.classList.toggle("showH3");
 });
+
+const home = document.getElementById("banner");
+const about = document.getElementById("about");
+const menu = document.getElementById("menu");
+const reviews = document.getElementById("reviews");
+const contact = document.getElementById("contact");
+
+const nav = document.querySelector(".nav");
+home.addEventListener("click", checkNav);
+about.addEventListener("click", checkNav);
+menu.addEventListener("click", checkNav);
+reviews.addEventListener("click", checkNav);
+contact.addEventListener("click", checkNav);
+
+function checkNav() {
+  nav.classList.remove("navvs");
+}
